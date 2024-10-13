@@ -50,3 +50,31 @@ This is a full-stack JavaScript exercise tracker application that allows users t
 ## Example Usage
 
 **Create a user:**
+POST /api/users
+{ "username": "testuser" }
+
+
+**Add an exercise:**
+
+POST /api/users/user_id/exercises
+{
+"description": "Running",
+"duration": 30,
+"date": "2024-10-12"
+}
+
+
+**Get exercise log:**
+
+GET /api/users/user_id/logs?from=2024-01-01&to=2024-10-12&limit=10
+
+
+## Technologies Used
+
+*   Node.js
+*   Express.js
+*   MongoDB
+*   Mongoose
+*   HTML
+*   CSS
+*   JavaScript
